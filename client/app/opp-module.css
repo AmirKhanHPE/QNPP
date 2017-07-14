@@ -1,0 +1,201 @@
+.octane-poker-planning {
+	margin: 0px 0%;
+}
+
+.header {
+	background-color: #000000;
+	padding: 20px;
+	/*position: relative;*/
+	width; 100%;
+}
+
+.header-logo {
+	font-size: 22px;
+	color: #ffffff;
+	padding-right: 28px;
+	/*position: absolute;*/
+	/*left: 18px;*/
+	/*margin-top: 12px;*/
+}
+
+.header-title {
+	font-size: 30px;
+	color: #00b388;
+	border-left: 1px solid #ffffff;
+	padding-left: 34px;
+	padding-right: 34px;
+}
+
+.footer {
+	position: absolute;
+	bottom: -40px;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+	background-color: #000000;
+	height: 30px;
+	color:#00ae88; 
+	padding: 5px;
+
+}
+
+/*************************** global style ***************************/
+button {
+	background-color: white;
+	border: 1px solid #86c186;
+	padding: 5px 40px;
+}
+
+button:disabled {
+	opacity: 0.7;
+	cursor: not-allowed;
+}
+
+input {
+	border: none;
+	border-bottom: 1px solid black;
+}
+
+input:focus {
+	outline: none;
+}
+
+.dropdown button {
+	background-color: white;
+	padding: 0px 10px;
+}
+
+.border-bottom{
+	border: none;
+	border-bottom: 1px solid black;
+}
+
+ul.dropdown-menu {
+	overflow-y: auto;
+}
+
+.height--300 {
+	max-height: 300px;
+}
+/********** position ***********/
+.absolute {
+	position: absolute;
+}
+
+.right--18px {
+	right: 18px;
+}
+
+/********** display ***********/
+.inline-block {
+	display: inline-block;
+}
+
+.flex {
+	display: flex;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.table-cell {
+	display: table-cell;
+}
+
+.text-align-center {
+	text-align: center;
+}
+
+.vertical-align-middle {
+	vertical-align: middle;
+}
+
+/********** width ************/
+.width--70px {
+	width: 70px;
+}
+
+.width--400px {
+	width: 400px;
+}
+
+/********** margin ***********/
+.margin-v--5px {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.margin-v--10px {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.margin-h--10px {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.margin--10px {
+	margin: 10px;
+}
+
+.margin-h--20px {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.margin-v--20px {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.margin-b--20px {
+	margin-bottom: 20px;
+}
+
+.margin--5px {
+	margin: 5px;
+}
+
+.margin--20px {
+	margin: 20px;
+}
+
+.margin-r--50px {
+	margin-right: 50px;
+}
+
+.padding--4px {
+	padding: 4px;
+}
+
+/********** font ***********/
+.font-size-40px {
+	font-size: 40px;
+}
+
+.font-size-18px {
+	font-size: 18px;
+}
+.font-size-20px {
+	font-size: 20px;
+}
+
+.font-size-22px {
+	font-size: 22px;
+}
+
+.ellipsis {
+	text-overflow: ellipsis;
+
+	/* Required for text-overflow to do anything */
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/********** general ***********/
+.cursor-pointer {
+	cursor: pointer;
+}
+

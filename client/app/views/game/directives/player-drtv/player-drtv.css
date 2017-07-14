@@ -1,0 +1,62 @@
+.player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.player-image-container {
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    flex: 0 0 0;
+}
+
+.player-image-container-owner {
+    border: 2px solid orange;
+}
+
+.player-owner-image {
+    width: 42px;
+    height: 42px;
+    padding: 2px;
+}
+
+.player-image {
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+}
+
+.player-checked-image {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: -5px;
+    left: -16px;
+    z-index: 1;
+    animation: chip-rotation 3s;
+}
+
+@keyframes chip-rotation {
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg);}
+}
+
+.player-name {
+    flex: 4 0 0;
+    margin-left: 10px;
+}
+
+.player-vote-value {
+}
+
+.player-comment {
+    flex: 1 0 0;
+}
+
+.player-comment-image {
+    width: 20px;
+    height: 20px;
+}

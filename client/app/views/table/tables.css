@@ -1,0 +1,173 @@
+.table-properties-container {
+    height: auto;
+	width: 65%;
+    border: 2px solid #4f5b52;
+    margin: 0px 0;
+    opacity: 1;
+    transition: all linear 0.5s;
+	padding-top: 10px;
+	background-color: white;
+	border-radius: 10px
+
+}
+
+.table-properties-container.ng-hide {
+    height: 0px;
+    opacity: 1;
+	background: solid;
+}
+
+.type-container {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.type-option {
+    border: 1px solid black;
+    cursor: pointer;
+    padding: 8px 20px;
+    font-size: 16px;
+}
+
+.type-option.active {
+    background-color: #9aaf9a;
+    color: black;
+}
+
+
+.pocker-form-control {
+    border: transparent;
+    border-bottom: 1px solid;
+    display: block;
+    width: 85%;
+    padding-top: 20px;
+}
+
+.tables-table {
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+}
+.pocker-green-button {
+    border: 2px solid #404142;
+    background: solid;
+	background-color: #babdc1;
+    margin-top: 15px;
+    height      : auto;
+    line-height : auto;
+    text-align  : center;
+    width       : auto;
+
+}
+.pocker-green-button:focus {
+    outline-style: none;
+}
+.pocker-button {
+    border: solid;
+    background: solid;
+    margin: 10px;
+    font-size: 18px;
+    padding: 10px;
+	
+}
+
+.pocker-button:focus {
+    outline-style: none;
+}
+.tables-table-header {
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+	padding-top: 100px;
+}
+
+.table-row {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid grey;
+    margin-bottom: 10px;
+	padding-top: 100px;
+	width: 80%
+}
+
+.tables-table-content .table-row {
+    padding: 10px 0px;
+    margin-top: -15px;
+	background-color: #b3d0db;
+}
+
+.tables-table-content .table-row:hover {
+    background-color: #e1f7ff;
+}
+
+.tables-table-content .table-row.table-row-finish {
+    background-color: #b2f2b0;
+}
+
+.tables-table-content .table-row.table-row-current {
+    background-color: #b7d0fd;
+}
+
+.table-row-item {
+    flex: 2;
+    padding: 0px 10px;
+}
+
+.table-row-summary-item {
+    padding: 0px 10px;
+    flex: 0 0 50px;
+}
+
+.table-summary-name {
+    flex: 1;
+}
+
+.table-summary-comment {
+    flex: 1;
+}
+
+.status-cell {
+    display: flex;
+    justify-content: space-between;
+}
+
+.scope-cell {
+    flex: 6;
+    border-left: 1px solid;
+}
+.delete-cell {
+    flex: 1;
+}
+.table-name {
+    color: #1f92eb;
+    cursor: pointer;
+}
+
+.active {
+    color: green;
+}
+
+.not-active {
+    color: red;
+}
+
+.remove-button {
+    color: black;
+    cursor: pointer;
+    display: none;
+}
+.table-row:hover
+.remove-button {
+    display: block;
+}
+
+input:required:invalid {
+    border-color: red;
+}
+
+.progress-bar-octane {
+    width: 100px;
+    height: 20px;
+    border: 2px solid black;
+    color: #FFFFFF;
+}

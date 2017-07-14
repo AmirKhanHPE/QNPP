@@ -1,0 +1,19 @@
+{
+  "tables": [
+    {
+      "name": "table1",
+      "numberOfPlayers": 6,
+      "status": "active"
+    },
+    {
+      "name": "table2",
+      "numberOfPlayers": 4,
+      "status": "active"
+    },
+    {
+      "name": "table3",
+      "numberOfPlayers": 11,
+      "status": "not active"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+<div class="modal-header" style="background-color:#dee1e5">
+    <h3 class="modal-title">Enter the ALM Octane Casino</h3>
+</div>
+<div class="modal-body" style="background-color:#eaecef">
+<!--  <form name="myForm">-->    
+
+<form name="myForm">
+    <div style="background-color:#eaecef">
+        <center>
+		<img src="../images/ALMOctane.png" alt="Avatar" class="avatar" width="218" height="150" style="border-radius:10px;border-style:outset">
+		<input style="background-color:#eaecef" type="text" ng-model="serverURL" class="pocker-form-control" required placeholder="Enter Server URL" value="https://mqast001pngx.saas.hpe.com">
+        <input style="background-color:#eaecef" type="text" ng-model="apiKey" class="pocker-form-control" required placeholder="Enter API key" value="qnplanningpoker_vqzn14zmo6z6niqlzyovk7m2k">
+        <input style="background-color:#eaecef" type="text" ng-model="apiSecret" class="pocker-form-control" required placeholder="Enter API secret" value="=bc9aaeaa3f34efcaC">
+        <button class="pocker-green-button" ng-disabled="myForm.$invalid || connecting" type="button" ng-click="sendAPI()">Bridge Order</button>
+        <button class="pocker-green-button" type="button" ng-show="showGenerate" ng-click="generate()">Generate</button>
+		</center>
+    </div>
+
+    <div class="margin-v--10px">
+    <center>
+    <label>Table selection to play:</label>
+
+    <div class="btn-group" uib-dropdown>
+      <button type="button" ng-disabled="isLoading()"
+              class="border-bottom" uib-dropdown-toggle >
+        {{selectedWorkSpace.name}} <span ng-hide="isLoading()" class="caret"></span>
+      </button>
+      <ul class="dropdown-menu height--300" uib-dropdown-menu role="menu">
+        <li role="presentation">
+          <div class="input-group input-group-sm search-control"> <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-search"></span>
+        </span>
+            <input type="text" class="form-control" ng-click="search($event)" autofocus placeholder="Search" ng-model="queryWorkspace">
+          </div>
+        </li>
+        <li role="menuitem" ng-repeat="workSpace in workSpaces | filter:queryWorkspace">
+          <a ng-click="setWorkSpace(workSpace)">{{workSpace.name}}</a>
+        </li>
+      </ul>
+    </div>
+	</center>
+    </div>
+
+    <div class="margin-v--10px">
+    <center>
+      <label>Join with your name:</label>
+      <div class="btn-group" uib-dropdown>
+        <button type="button" ng-disabled="isUserLoading()"
+                class="border-bottom" uib-dropdown-toggle>
+          {{selectedUser.name}} <span ng-hide="isUserLoading()" class="caret"></span>
+        </button>
+        <ul class="dropdown-menu height--300" uib-dropdown-menu role="menu">
+          <li role="presentation">
+            <div class="input-group input-group-sm search-control"> <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-search"></span>
+        </span>
+              <input type="text" class="form-control" ng-click="search($event)" autofocus placeholder="Search" ng-model="queryUser">
+            </div>
+          </li>
+          <li role="menuitem" ng-repeat="user in users | filter:queryUser">
+            <a ng-click="setUserName(user)">{{user.name}}</a>
+          </li>
+        </ul>
+      </div>
+	</center>
+    </div>
+
+    <div class="modal-footer">
+	<center>
+      <!-- <div class="progress-bar progress-bar-striped progress-bar-octane active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">Connecting...</div> -->
+      <button class="pocker-green-button" type="button" ng-disabled="!selectedWorkSpace || !selectedUser" ng-click="connect()">Sit and Go</button>
+	</center>
+    </div>
+  </form>
+</div>

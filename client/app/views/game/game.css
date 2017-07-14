@@ -1,0 +1,162 @@
+.game {
+    flex-direction: row;
+    position: relative;
+    top: 82px;
+    bottom: 10px;
+    margin-right: 10%;
+	background-color: white;
+	margin-left: 5%;
+	border-radius: 10px;
+}
+
+.game-left-side {
+    flex: 2 0 0;
+    flex-direction: column;
+	padding-right:10px;
+    box-shadow: 10px 10px;
+	border-radius: 10px;
+}
+
+.game-title {
+    margin: 15px 0px 15px 0px;
+    display: inline-block;
+    flex: 1;
+	padding-left:10px;
+}
+
+.game-sub-title {
+
+}
+.work-item-name{
+    flex: 1;
+	font-style: italic;
+}
+.share-image {
+    width: 30px;
+    height: 30px;
+    margin: 4px;
+    fill: #ad0000;
+}
+
+.game-upper-line{
+    display: flex;
+}
+.share-table{
+    display: inline-block;
+    height: 45px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.share-table-button{
+    margin-right: 34px;
+    border: none
+}
+
+.share-table-text{
+    vertical-align: middle;
+    display: inline-block;
+    height: 49px;
+}
+
+.game-table-name-container {
+    background-color: #5e6356;
+    display: inline-block;
+    border-radius: 50px;
+    padding: 10px;
+    color: #ffffff;
+}
+
+.game-table-name {
+    padding-right: 20px;
+}
+
+.game-table-owner {
+    border-left: 2px solid #b51717;
+    padding-left: 20px;
+}
+
+.game-title-filter {
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.game-cards-votes-container {
+    /*border: 1px solid black;*/
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-comment-container {
+    margin: 20px;
+}
+
+.game-comment-input {
+    width: 60%;
+    display: inline-block;
+}
+
+.game-comment-send-button {
+    cursor: pointer;
+    color: #00000;
+    font-size: 20px;
+    margin: 0px 15px;
+}
+
+.game-comment-send-button.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.game-right-side {
+    flex: 1 0 0;
+    background-color: #efefef;
+	padding-left:10px;
+	border-radius: 10px;
+    box-shadow: 10px 10px;
+}
+
+.players-container {
+}
+
+.players-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.item-and-buttons{
+    display: inline-flex;
+}
+.item-title-votes{
+    flex: 0;
+}
+.buttons-container{
+    flex: 2;
+}
+.back-image {
+    width: 25px;
+    height: 25px;
+	padding-bottom:10px;
+    top: 0px;
+}
+
+.back-button{
+    background-color: transparent;
+    border: none;
+    padding: 0px 10px 0px 0px;
+    color: black;
+	padding-left: 10px;
+}
+.poker-button {
+    border: none;
+    background: #00ae88;
+    height: 64px;
+    width: 155px;
+    font-size: 18px;
+    color: white;
+    margin:16px 34px;
+    padding: 5px 15px;
+	background-color:#5e6356;
+	/*border: 2px solid #404142*/
+}
+.poker-button:focus {
+    outline-style: none;
+}
