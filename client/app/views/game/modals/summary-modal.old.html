@@ -1,29 +1,11 @@
 <div class="modal-header">
-    <h3 class="modal-title">Summary</h3><img class="cursor-pointer absolute right--18px" src="../../../../images/exportToPDF.png" ng-click="exportToPDF()" title="Export to PDF">
-
+    <h3 class="modal-title">Summary</h3>
 </div>
 <div class="modal-body">
-    <form name="myForm" style="height:70vH">
-	<table class="stories">
 
-	  <tr>
-		<th>Index</th>
-		<th>ID</th>
-		<th>Name</th>
-		<th>SP</th>
-		<th>Comments</th>
-	  </tr>
-	  <tr ng-repeat="summaryVote in summaryObj" ng-class="{'table-row-finish': summaryVote.finish, 'table-row-current': $index == selectedWorkItemIndex}">
-		<td>{{summaryVote.index}}</td>
-		<td>{{summaryVote.id}}</td>
-		<td>{{summaryVote.name}}</td>
-		<td>{{summaryVote.sp}}</td>
-		<td>{{summaryVote.comment}}</td>
-	  </tr>
-	</table>
-	</form>
-	
-    <!--<div class="tables-table">
+    <img class="cursor-pointer absolute right--18px" src="../../../../images/exportToPDF.png" ng-click="exportToPDF()" title="Export to PDF">
+
+    <div class="tables-table">
         <div class="table-row tables-table-header">
             <div class="table-row-summary-item">#</div>
             <div class="table-row-summary-item">ID</div>
@@ -39,8 +21,8 @@
                 <div class="table-row-summary-item">{{summaryVote.sp}}</div>
                 <div class="table-row-summary-item table-summary-comment">{{summaryVote.comment}}</div>
             </div>
-        </div>-->
-</div>
+        </div>
+    </div>
 
 
 
