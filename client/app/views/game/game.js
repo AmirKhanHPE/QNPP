@@ -135,6 +135,7 @@
     }
 
     function subscribeToEvents() {
+
       socketSvc.on('player:joined', function (data) {
         refreshPlayers(data.newPlayer)
       });
@@ -184,7 +185,7 @@
         everyoneFinishVote: false
       };
       $scope.players.push(newPlayer);
-      toastSvc.showInfoToast("player '" + newPlayer.name + "' - '" + newPlayer.id + "' has joined the session");
+      toastSvc.showInfoToast("player '" + newPlayer.name + "' has joined the session");
     }
 	//Added by Amir Khan on 14 July 2017
     function removePlayers(PlayerIdx) {
